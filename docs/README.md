@@ -70,4 +70,11 @@ Output
 ``` Python
 10
 ```
+## Сommit history
 
+```
+bbf7a66 fixed rectangle.py and examples in readme
+a7f0a23 added file and fixed readme
+d078c8d L-03: Docs added
+8ba9aeb L-03: Circle and square added
+```
