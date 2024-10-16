@@ -73,7 +73,7 @@ Output
 ## Сommit history
 
 
-[bbf7a66](https://github.com/VictoriaGarushina/geometric_lib/commit/bbf7a66677d3d924c9a34e528ea96ebff5fd26b6) fixed rectangle.py and examples in readme
-[a7f0a23](https://github.com/VictoriaGarushina/geometric_lib/commit/a7f0a2363314bab8e5ae8b556a0015108867e9d8) added file and fixed readme
-[d078c8d](https://github.com/VictoriaGarushina/geometric_lib/commit/d078c8d9ee6155f3cb0e577d28d337b791de28e2) L-03: Docs added
-[8ba9aeb](https://github.com/VictoriaGarushina/geometric_lib/commit/8ba9aeb3cea847b63a91ac378a2a6db758682460) L-03: Circle and square added
+[bbf7a66](https://github.com/VictoriaGarushina/geometric_lib/commit/bbf7a66677d3d924c9a34e528ea96ebff5fd26b6) fixed rectangle.py and examples in readme  
+[a7f0a23](https://github.com/VictoriaGarushina/geometric_lib/commit/a7f0a2363314bab8e5ae8b556a0015108867e9d8) added file and fixed readme  
+[d078c8d](https://github.com/VictoriaGarushina/geometric_lib/commit/d078c8d9ee6155f3cb0e577d28d337b791de28e2) L-03: Docs added  
+[8ba9aeb](https://github.com/VictoriaGarushina/geometric_lib/commit/8ba9aeb3cea847b63a91ac378a2a6db758682460) L-03: Circle and square added  
