@@ -3,10 +3,10 @@ name: Run Unit Tests for Geometric Library
 on:
   push:
     branches:
-      - main  # Запускать workflow при пушах в основную ветку
+      - main  
   pull_request:
     branches:
-      - main  # Запускать workflow при создании PR в основную ветку
+      - main  
 
 jobs:
   test:
@@ -24,7 +24,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: 3.9  # Укажите версию Python, которая используется в проекте
+          python-version: 3.9  
 
       # Шаг 3: Установка зависимостей (если требуется)
       - name: Install dependencies
