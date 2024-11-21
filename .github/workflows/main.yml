@@ -18,11 +18,11 @@ jobs:
     steps:
       # Шаг 1: Клонирование репозитория
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # Шаг 2: Установка Python
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: 3.9  # Укажите версию Python, которая используется в проекте
 
