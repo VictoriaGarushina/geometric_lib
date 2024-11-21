@@ -1,0 +1,36 @@
+name: Run Unit Tests for Geometric Library
+
+on:
+  push:
+    branches:
+      - main  # Запускать workflow при пушах в основную ветку
+  pull_request:
+    branches:
+      - main  # Запускать workflow при создании PR в основную ветку
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+
+    steps:
+      # Шаг 1: Клонирование репозитория
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Шаг 2: Установка Python
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9  # Укажите версию Python, которая используется в проекте
+
+      # Шаг 3: Установка зависимостей (если требуется)
+      - name: Install dependencies
+        run: pip install -r requirements.txt || true
+
+      # Шаг 4: Запуск тестов
+      - name: Run unit tests
+        run: |
+          python -m unittest discover -s . -p "unittest_*.py"
