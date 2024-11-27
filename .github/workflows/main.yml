@@ -24,13 +24,9 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.9  # Укажите версию Python, которая используется в проекте
-
-      # Шаг 3: Установка зависимостей (если требуется)
-      - name: Install dependencies
-        run: pip install -r requirements.txt || true
-
-      # Шаг 4: Запуск тестов
+          python-version: 3.9  
+          
+      # Шаг 3: Запуск тестов
       - name: Run unit tests
         run: |
           python -m unittest discover -s . -p "unittest_*.py"
