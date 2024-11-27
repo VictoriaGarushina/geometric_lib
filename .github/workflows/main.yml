@@ -3,11 +3,10 @@ name: Run Unit Tests for Geometric Library
 on:
   push:
     branches:
-      - laba_4 
+      - main  
   pull_request:
     branches:
-      - laba_4 
-  workflow_dispatch:
+      - main  
 
 jobs:
   test:
@@ -19,14 +18,14 @@ jobs:
     steps:
       # Шаг 1: Клонирование репозитория
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # Шаг 2: Установка Python
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: 3.9  
-          
+
       # Шаг 3: Запуск тестов
       - name: Run unit tests
         run: |
